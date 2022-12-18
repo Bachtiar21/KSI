@@ -23,7 +23,7 @@ from . import views
 #     return HttpResponse("Hello World")
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     path('', views.index),
     path('about/', views.about),
